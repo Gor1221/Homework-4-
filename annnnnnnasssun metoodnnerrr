@@ -1,0 +1,21 @@
+let str = 'Prisoner of War';
+
+
+function giveUppercase() {
+  
+   let arr = [] ;
+  let current = '';
+  arr.push(str[0].toUpperCase());
+ 
+  for(let i=0 ; i<str.length ; ++i){
+    if(str[i] === ' '){
+      current = str[i+1].toUpperCase();
+      arr.push(current);
+    }
+  }
+ 
+  console.log( arr.join(""))
+  
+}
+
+giveUppercase();
